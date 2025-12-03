@@ -1,0 +1,19 @@
+{
+  "css.validate": false,
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "tailwindCSS.includeLanguages": {
+    "plaintext": "html"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.stylelint": true
+  },
+  "stylelint.validate": ["css", "scss"],
+  "json.schemas": [
+    {
+      "fileMatch": ["/*.json"],
+      "url": "http://json.schemastore.org/schema-org-thing"
+    }
+  ]
+}
