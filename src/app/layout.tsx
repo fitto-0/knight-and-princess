@@ -1,4 +1,5 @@
 import { Inter, Cinzel, Playfair_Display, Dancing_Script } from 'next/font/google';
+import { Analytics } from '@vercel/analytics/next';
 import './globals.css';
 
 // Load Google Fonts
@@ -73,6 +74,7 @@ export default function RootLayout({
         <div className="relative z-10">
           {children}
         </div>
+        <Analytics />
       </body>
     </html>
   );
