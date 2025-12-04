@@ -1,5 +1,6 @@
 import { Inter, Cinzel, Playfair_Display, Dancing_Script } from 'next/font/google';
 import './globals.css';
+import MusicPlayerWrapper from '@/components/MusicPlayerWrapper';
 
 // Load Google Fonts
 const inter = Inter({ 
@@ -38,7 +39,7 @@ export const metadata: Metadata = {
     description: 'An immersive dark fantasy experience of love and chivalry',
     type: 'website',
     locale: 'en_US',
-    url: 'https://knight-and-princess-tale.vercel.app',
+    url: 'https://knight-and-princess.vercel.app',
     siteName: 'A Knight\'s Tale',
     images: [
       {
@@ -73,6 +74,9 @@ export default function RootLayout({
         <div className="relative z-10">
           {children}
         </div>
+        
+        {/* Music Player */}
+        <MusicPlayerWrapper />
       </body>
     </html>
   );
