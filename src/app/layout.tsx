@@ -1,6 +1,7 @@
 import { Inter, Cinzel, Playfair_Display, Dancing_Script } from 'next/font/google';
 import './globals.css';
 import MusicPlayerWrapper from '@/components/MusicPlayerWrapper';
+import { Analytics } from '@vercel/analytics/next';
 
 // Load Google Fonts
 const inter = Inter({ 
@@ -77,6 +78,9 @@ export default function RootLayout({
         
         {/* Music Player */}
         <MusicPlayerWrapper />
+        
+        {/* Vercel Web Analytics */}
+        <Analytics />
       </body>
     </html>
   );
