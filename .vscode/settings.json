@@ -7,7 +7,7 @@
     "plaintext": "html"
   },
   "editor.codeActionsOnSave": {
-    "source.fixAll.stylelint": true
+    "source.fixAll.stylelint": "explicit"
   },
   "stylelint.validate": ["css", "scss"],
   "json.schemas": [
